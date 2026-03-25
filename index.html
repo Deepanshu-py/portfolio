@@ -710,10 +710,10 @@ function filterProjects(cat,btn){
 }
 
 /* SMOOTH SCROLL */
-document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+document.querySelectorAll('a[href^="https://drive.google.com/file/d/1NOyeHNhH0OqkI1K1SFyf2kyotqc_4GQO/view?usp=sharing"]').forEach(function(anchor){
   anchor.addEventListener('click',function(e){
     var href=this.getAttribute('href');
-    if(href==='#')return;
+    if(href==='https://drive.google.com/file/d/1NOyeHNhH0OqkI1K1SFyf2kyotqc_4GQO/view?usp=sharing')return;
     e.preventDefault();
     var target=document.querySelector(href);
     if(target){target.scrollIntoView({behavior:'smooth',block:'start'});}
